@@ -10,22 +10,38 @@
     <title>Kodecamp Fashion Store</title>
 </head>
 <body>
+    <div class="menu-container">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
-        <i class="bx bx-menu"></i>
+        <div class="hamburger">
+            <i class="bx bx-menu"></i>
+        </div>
         <div class="about">
             <h1>about</h1>
             <div class="about-text">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla 
-                    exercitationem totam, similique ullam laudantium ut quos, quo deserunt 
-                    dolor odio aliquam optio debitis quis quod atque eum beatae dolorum illo, 
-                    perferendis rem commodi odit maxime. Ab tempora perspiciatis nam itaque 
-                    omnis fuga, sunt ipsam at molestiae doloremque aspernatur possimus maiores!
+                    Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet 
+                    aliquam id <br> diam maecenas ultricies mi. Sollicitudin ac orci phasellus egestas tellus 
+                    rutrum. Venenatis cras <br> sed felis eget. Amet risus nullam eget felis eget nunc. Lacus 
+                    vestibulum sed arcu non odio euismod. <br> Consectetur adipiscing elit duis tristique.
                 </p>
             </div>
         </div>
     </header>
-    <section>
+    <section class="texts-only pink">
         <div class="texts-container">
             <h2>
                 <span>H</span> e an thing rapid these after going drawn or. Timed she his law the <br> spoil round defer. In surprise concerns informed betrayed he <br> learning is ye. Ignorant formerly so ye blessing. 
@@ -43,13 +59,15 @@
         <img src="./images/gallery-5.jpeg" alt="#">
         <img src="./images/gallery-6.jpeg" alt="#">
     </section>
-    <section class="coming-soon">
-        <h2>coming soon</h2>
-        <p>Our website is under construction, follow us for update now!</p>
-        <div class="form-bag">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Enter a valid email address">
-            <button>get updates</button>
+    <section class="coming-soon pink">
+        <div class="coming-soon-container">
+            <h2>coming soon</h2>
+            <p>Our website is under construction, follow us for update now!</p>
+            <div class="form-bag">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Enter a valid email address">
+                <button>get updates</button>
+            </div>
         </div>
     </section>
     <section class="article">
@@ -67,8 +85,8 @@
             <img src="./images/signature.png" alt="">
         </div>
     </section>
-    <section class="coming-soon">
-        <h2>coming soon</h2>
+    <section class="slide-container pink">
+        <h2>spring collection</h2>
         <div class="slide">
             <img src="./images/slide-1.jpg" alt="#">
             <img src="./images/slide-2.jpg" alt="#">
@@ -77,45 +95,49 @@
         </div>
         <i class="bx bx-right-arrow-alt"></i>
     </section>
-    <section class="products">
-        <div class="product-image">
-            <img src="./images/product-1.jpg" alt="#">
-            <img src="./images/product-2.jpg" alt="#">
-        </div>
-        <div class="product-info">
-            <h3>sample product</h3>
-            <h4>$9.95</h4>
-            <p>
-                Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo 
-                sagittis suscipit <br> ultrices.
-            </p>
-            <button>add to cart</button>
+    <section class="products-container">
+        <div class="products">
+            <div class="product-image">
+                <img src="./images/product-1.jpg" alt="#">
+                <img src="./images/product-2.jpg" alt="#">
+            </div>
+            <div class="product-info">
+                <h3>sample product</h3>
+                <h4>$9.95</h4>
+                <p>
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo 
+                    sagittis suscipit <br> ultrices.
+                </p>
+                <button>add to cart</button>
+            </div>    
         </div>
     </section>
     <section class="subscribe">
         <div class="subscribe-left-col">
-            <img src="" alt="">
+            <img src="./images/subscribe.jpeg" alt="#">
         </div>
         <div class="subscribe-right-col">
-            <hr>
-            <h2>subscribe</h2>
-            <div class="input-group">
-                <input type="email" placeholder="Enter a valid email address">
-                <input type="text" placeholder="Enter your Name">
-            </div>
-            <button>submit</button>
-            <p>
-                Sample text. Click to select the text box. Click again <br> or double 
-                click to start editing the text.
-            </p>
-            <div class="socials">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-instagram"></i>
+            <div class="wrapper">
+                <hr>
+                <h2>subscribe</h2>
+                <div class="input-group">
+                    <input type="email" placeholder="Enter a valid email address">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <button>submit</button>
+                <p>
+                    Sample text. Click to select the text box. Click again <br> or double 
+                    click to start editing the text.
+                </p>
+                <div class="socials">
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-instagram"></i>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
+    <!-- <footer>
         <p>
             Sample text. Click to select the text box. Click again <br> or double 
             click to start editing the text.
@@ -124,8 +146,7 @@
         <p>
             <a href="#">website templates</a>created with <a href="#">website builder software.</a>
         </p>
-    </footer>
-
+    </footer> -->
 </body>
 <script src="./app.js"></script>
 </html>
