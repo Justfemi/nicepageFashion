@@ -7,13 +7,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .2s ease;
 }
 
 header {
     background: url('./images/banner.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 90vh;
+    position: relative;
 }
 
 header .hamburger {
@@ -39,17 +41,17 @@ header .hamburger i{
 }
 
 .close {
-    font-size: 50px;
+    font-size: 40px;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0;
+    top: 0;
     color: #fff;
     cursor: pointer;
 }
 
 .navbar ul {
     height: 100%;
-    width: 35rem;
+    width: 35vw;
     background: #2c3e50;
     flex-flow: column;
     justify-content: center;
@@ -74,22 +76,33 @@ header .hamburger i{
     left: 0;
 }
 
+.blue-center {
+    position: absolute;
+    bottom: 200px;
+    /* border: solid blue; */
+}
+
 header .about {
-    margin: 500px auto 0;
     width: 80%;
     height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 0 auto;
 }
 
 .about h1 {
-    flex-basis: 20%;
+    flex-basis: 25%;
     font-weight: 700;
     font-family: 'Playfair display', sans-serif;
     font-size: 100px;
     color: #fff;
+    align-self: center;
 }
 
 .about-text {
-    flex-basis: 75%;
+    flex-basis: 70%;
     text-align: left;
     background: #fff;
     color: #000;
@@ -115,7 +128,7 @@ header .about {
 .texts-container {
     width: 70%;
     margin: 10px auto;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     color: #fff;
 }
 
@@ -168,22 +181,19 @@ h2 span {
 
 .form-bag {
     display: flex;
-    /* width: 70%; */
     flex-wrap: wrap;
-    /* margin-left: auto;
-    margin-right: auto; */
-    border: 1px solid red;
-    /* align-items: center; */
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-bag input {
-    padding: 15px 10px;
+    padding: 12px 10px;
     border-radius: 25px;
     outline: none;
     border: none;
-    width: 36%;
+    min-width: 15%;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -192,7 +202,7 @@ button {
     color: #fff;
     border-radius: 25px;
     border: none;
-    padding: 15px 35px;
+    padding: 10px 35px;
     letter-spacing: 2px;
 }
 
@@ -371,19 +381,67 @@ button {
     margin: 10px;
 }
 
-/* @media only screen and (max-width: 1400px) {
-    .about-text {
-        width: 50%;
+
+@media only screen and (max-width: 1350px){
+    .about h1 {
+        font-size: 80px;
     }
-} */
+
+    .about {
+        min-width: 300px;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
-    .flex {
+    .flex, .about {
         flex-direction: column;
     }
 
-    .article, .slide-container, .products-container, .subscribe {
+    .article, .slide-container, .products-container {
         padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    /* header .about {
+        margin: 200px auto 0;
+    } */
+
+    .texts-container {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .about-text {
+        padding: 15px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    .texts-container p, .coming-soon-container p,
+    .article-right-col p, .product-info p, 
+    .wrapper p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .coming-soon-container {
+        padding: 20px;
+    }
+
+    .navbar ul {
+        width: 65vw;
+    }
+
+    .texts-container h2 {
+        font-size: 24px;
     }
 }
 
@@ -404,6 +462,10 @@ button {
     .wrapper .input-group input {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .form-bag input {
+        width: 100%;
     }
 }
 
